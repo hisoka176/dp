@@ -1,0 +1,14 @@
+syntax = "proto3";
+package proto_files;
+
+message student {
+  string name = 1;
+  int32  age = 2;
+}
+
+message teacher{
+  string name = 1;
+  int32 age = 2;
+  string title = 3;
+  repeated student sdt = 4;
+}
